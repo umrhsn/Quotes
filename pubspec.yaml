@@ -1,0 +1,43 @@
+name: quotes
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.4
+  bloc: ^8.0.3
+  equatable: ^2.0.3
+  fluttertoast: ^8.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logoLight.png
+#    - assets/images/1x/logoLight.png
+#    - assets/images/1.5x/logoLight.png
+#    - assets/images/2x/logoLight.png
+#    - assets/images/3x/logoLight.png
+#    - assets/images/4x/logoLight.png
+
+  fonts:
+    - family: Product Sans
+      fonts:
+        - asset: assets/fonts/Product Sans Bold.ttf
+        - asset: assets/fonts/Product Sans Bold Italic.ttf
+        - asset: assets/fonts/Product Sans Italic.ttf
+        - asset: assets/fonts/Product Sans Regular.ttf
+          style: italic
