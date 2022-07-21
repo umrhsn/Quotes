@@ -26,10 +26,10 @@ class AppBarThemes {
       systemOverlayStyle: systemOverlayStyle,
       centerTitle: true,
       backgroundColor: Colors.transparent,
-      titleTextStyle: const TextStyle(
+      titleTextStyle: TextStyle(
         fontFamily: AppStrings.fontFamily,
         fontSize: 25,
-        color: Colors.black,
+        color: isLight ? Colors.black : Colors.white,
         fontWeight: FontWeight.bold,
       ),
       elevation: 0,

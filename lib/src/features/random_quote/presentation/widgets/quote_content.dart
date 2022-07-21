@@ -7,8 +7,8 @@ class QuoteContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
-      padding: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppColors.primary,
         borderRadius: BorderRadius.circular(30),
@@ -21,7 +21,7 @@ class QuoteContent extends StatelessWidget {
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           Container(
-            margin: EdgeInsets.symmetric(vertical: 15),
+            margin: const EdgeInsets.symmetric(vertical: 15),
             child: Text(
               'Bill Gates',
               textAlign: TextAlign.center,

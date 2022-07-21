@@ -3,9 +3,7 @@ import 'package:quotes/src/core/utils/app_strings.dart';
 import 'package:quotes/src/features/random_quote/presentation/screens/quote_screen.dart';
 
 class Routes {
-  static const String initialRoute = '';
-
-  /// *
+  static const String initialRoute = ''; // *
   static const String favoriteQuoteRoute = 'favoriteQuote';
 }
 
