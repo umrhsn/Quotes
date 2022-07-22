@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:quotes/src/core/error/failures.dart';
-import 'package:quotes/src/core/use_cases/use_case.dart';
+import 'package:quotes/src/core/usecases/usecase.dart';
 import 'package:quotes/src/features/random_quote/domain/entities/quote.dart';
 
 class GetConcreteQuote implements UseCase<Quote, NoParams> {
