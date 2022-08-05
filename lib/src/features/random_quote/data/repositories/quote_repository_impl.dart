@@ -34,15 +34,12 @@ class QuoteRepositoryImpl implements QuoteRepository {
     } on ServerException {
       return Left(ServerFailure());
     }
-    // }
-    // else {
+    // } else {
     //   try {
-    //     final cacheRandomQuote =
-    //         await randomQuoteLocalDataSource.getLastRandomQuote();
+    //     final cacheRandomQuote = await randomQuoteLocalDataSource.getLastRandomQuote();
     //     return Right(cacheRandomQuote);
     //   } on CacheException {
     //     return Left(CacheFailure());
     //   }
-    // }
   }
 }

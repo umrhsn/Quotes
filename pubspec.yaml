@@ -11,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^1.0.2
   http: ^0.13.4
   equatable: ^2.0.3
@@ -33,11 +35,9 @@ flutter:
 
   assets:
     - assets/images/logoLight.png
-#    - assets/images/1x/logoLight.png
-#    - assets/images/1.5x/logoLight.png
-#    - assets/images/2x/logoLight.png
-#    - assets/images/3x/logoLight.png
-#    - assets/images/4x/logoLight.png
+    - assets/images/quote.png
+    - lang/ar.json
+    - lang/en.json
 
   fonts:
     - family: Product Sans
