@@ -26,23 +26,23 @@ class QuoteRepositoryImpl implements QuoteRepository {
     else
       get data from cache;
     */
-    if (await networkInfo.isConnected) {
-      try {
-        final remoteRandomQuote =
-            await randomQuoteRemoteDataSource.getRandomQuote();
-        randomQuoteLocalDataSource.cacheQuote(remoteRandomQuote);
-        return Right(remoteRandomQuote);
-      } on ServerException {
-        return Left(ServerFailure());
-      }
-    } else {
-      try {
-        final cacheRandomQuote =
-            await randomQuoteLocalDataSource.getLastRandomQuote();
-        return Right(cacheRandomQuote);
-      } on CacheException {
-        return Left(CacheFailure());
-      }
+    // if (await networkInfo.isConnected) {
+    try {
+      final remoteRandomQuote = await randomQuoteRemoteDataSource.getRandomQuote();
+      randomQuoteLocalDataSource.cacheQuote(remoteRandomQuote);
+      return Right(remoteRandomQuote);
+    } on ServerException {
+      return Left(ServerFailure());
     }
+    // }
+    // else {
+    //   try {
+    //     final cacheRandomQuote =
+    //         await randomQuoteLocalDataSource.getLastRandomQuote();
+    //     return Right(cacheRandomQuote);
+    //   } on CacheException {
+    //     return Left(CacheFailure());
+    //   }
+    // }
   }
 }
